@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Juego Suma</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <h1>Juego de Suma</h1>
+    <div class="container">
+      <div class="izquierdo">
+        <div class="container-operacion">
+            <span id="suma">9 + 9 =</span>
+            <span class="resultado" id="resultado">18</span>
+        </div>
+        <span id="msj" class="msj">Exelente!!</span>
+      </div>
+
+      <div class="derecha">
+        <span id="op1" class="opcion" onclick="controlarRespuesta(this)">18</span>
+        <span id="op2" class="opcion" onclick="controlarRespuesta(this)">18</span>
+        <span id="op3" class="opcion" onclick="controlarRespuesta(this)">18</span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
